@@ -1,0 +1,851 @@
+
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url(fonts/OpenSans-Regular.woff);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url(fonts/OpenSans-Bold.woff);
+    font-weight: 700;
+    font-style: normal;
+}
+
+.visually-hidden {
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    font-family: "OpenSans-Regular", Arial, Sans-serif;
+    color: #0f0d0e;
+}
+
+h1, h2, h3 {
+    font-family: "OpenSans-Bold", Arial, Sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+}
+.slogan-text{
+    font-family: "OpenSans-Bold", Arial, Sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+img{
+    width: 100%;
+}
+
+.list-styles-reset {
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.main-header {
+    position: relative;
+    background-color: #0a0e34;
+    background-image: url(img/football_767.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 33px;
+    padding-bottom: 84px;
+}
+
+.main-header::before {
+    content: "";
+    position: absolute;
+    background-color: #0a0e34;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.9;
+}
+
+.header-content {
+    position: relative;
+    padding-left: 6.25%;
+    padding-right: 6.25%;
+    color: #ffffff;
+}
+
+.logo {
+    display: flex;
+    margin-bottom: 135px;
+}
+
+.logo-svg {
+    width: 133px;
+    margin-left: auto;
+    margin-right: auto;
+    fill: #ffffff;
+}
+
+.page-title {
+    margin-bottom: 87px;
+    width: 280px;
+}
+
+.slogan-text {
+    font-size: 28px;
+    line-height: 1;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.slogan-part-two {
+    display: block;
+    margin-top: 20px;
+    margin-left: 44px;
+    line-height: normal;
+}
+
+.button {
+    display: flex;
+    background-color: #5e42b0;
+    border-radius: 21px;
+    height: 35px;
+    align-items: center;
+    padding-left: calc(50% - 55px);
+    font-size: 8px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.button:hover{
+    color: darkblue;
+}
+
+.button:nth-child(n+2) {
+    margin-top: 14px;
+}
+
+.device-svg {
+    width: 20px;
+    margin-right: 8px;
+    fill: #ffffff;
+}
+
+.button-text-bold {
+    display: block;
+    font-family: "OpenSans-Bold";
+}
+
+.athlets-players {
+    position: relative;
+
+}
+
+.athlets::before {
+    content: "";
+    position: absolute;
+    background-image: url(img/footballer_192.png);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center 80px;
+}
+
+.players::before {
+    content: "";
+    position: absolute;
+    background-image: url(img/basketballer_302.png);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center 80px;
+}
+
+
+.section-title {
+    font-size: 50px;
+    line-height: 1;
+    color: #e7e7e7;
+    margin-left: 6.25%;
+    margin-right: 6.25%;
+    padding-top: 24px;
+    padding-bottom: 265px;
+}
+
+.list-item {
+    padding: 59px 6.25% 53px 6.25%;
+}
+
+.list-item:nth-child(2) {
+    background-color: #f5f4f9;
+}
+
+.athlets .list-item:nth-child(3) {
+    background-color: #5e42b0;
+}
+
+.players .list-item:nth-child(3) {
+    background-color: #090c35;
+}
+
+.athlets-players .list-description {
+    font-size: 15px;
+}
+
+.athlets-players .list-item:nth-child(3) .list-description {
+    color: #ffffff;
+}
+
+.athlets-players .list-title {
+    position: relative;
+    font-size: 23px;
+    color: #c1c1c1;
+    margin-left: 25px;
+    margin-bottom: 29px;
+}
+
+.athlets-players .list-item:nth-child(1) .list-title::before {
+    content: "01";
+    position: absolute;
+    left: -25px;
+    top: 5px;
+    font-size: 14px;
+    font-family: "OpenSans-Bold";
+    color: #000000;
+}
+
+.athlets-players .list-item:nth-child(2) .list-title::before {
+    content: "02";
+    position: absolute;
+    left: -25px;
+    top: 5px;
+    font-size: 14px;
+    font-family: "OpenSans-Bold";
+    color: #000000;
+}
+
+.athlets .list-item:nth-child(3) .list-title::before {
+    content: "03";
+    position: absolute;
+    left: -25px;
+    top: 5px;
+    font-size: 14px;
+    font-family: "OpenSans-Bold";
+    color: #000000;
+}
+
+.players .list-item:nth-child(3) .list-title::before {
+    content: "03";
+    position: absolute;
+    left: -25px;
+    top: 5px;
+    font-size: 14px;
+    font-family: "OpenSans-Bold";
+    color: #8765dd;
+}
+
+.athlets-players .list-item:nth-child(n+1):nth-child(-n+2) .list-title::after {
+    content: "";
+    position: absolute;
+    left: -25px;
+    top: 23px;
+    width: 17px;
+    height: 4px;
+    background-color: #5e42b0;
+    border-radius: 2px;
+}
+
+.athlets-players .list-item:nth-child(3) .list-title::after {
+    content: "";
+    position: absolute;
+    left: -25px;
+    top: 23px;
+    width: 17px;
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+
+.athlets-players .section-content .list-item:nth-child(1) .list-title::after {
+    width: 16px;
+}
+
+.to-do-content {
+    padding: 33px 6.25% 80px 6.25%;
+}
+
+.to-do-title {
+    position: relative;
+    font-size: 28px;
+    line-height: 1;
+    color: #e7e7e7;
+    margin-bottom: 23px;
+}
+
+.needs-to-do .to-do-item:nth-child(1) .to-do-title::before {
+    content: "01";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: -95px;
+    font-size: 14px;
+    line-height: 70px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #5e42b0;
+}
+
+.needs-to-do .to-do-item:nth-child(2) .to-do-title::before {
+    content: "02";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: -95px;
+    font-size: 14px;
+    line-height: 70px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #5e42b0;
+}
+
+.needs-to-do .to-do-item:nth-child(3) .to-do-title::before {
+    content: "03";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: -95px;
+    font-size: 14px;
+    line-height: 70px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #5e42b0;
+}
+
+.to-do-item .to-do-title::after {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 27px;
+    width: 17px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #8f7bc8;
+}
+
+.to-do-item:nth-child(1) .to-do-title::after {
+    width: 16px;
+}
+
+.to-do-description {
+    font-size: 16px;
+}
+
+.main-footer {
+    position: relative;
+    padding-top: 99px;
+    padding-bottom: 10px;
+    color: #ffffff;
+    background-color: #0a0e34;
+    background-image: url(img/game_767.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.main-footer::before {
+    content: "";
+    position: absolute;
+    background-color: #0a0e34;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.9;
+}
+
+.footer-content {
+    position: relative;
+    padding-left: 6.25%;
+    padding-right: 6.25%;
+}
+
+.footer-logo {
+    display: flex;
+    width: 72px;
+    height: 74px;
+    background-image: linear-gradient(to bottom, #7c58de, #493a8d);
+    border-radius: 15px;
+    margin: auto;
+}
+
+.footer-logo-svg {
+    width: 50px;
+    fill: #ffffff;
+    margin: auto;
+}
+
+.footer-slogan {
+    margin-top: 58px;
+    margin-bottom: 76px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.footer-slogan-item {
+    display: block;
+    font-family: "OpenSans-Bold";
+    font-size: 32px;
+}
+
+.footer-slogan-item:nth-child(2) {
+    font-family: "OpenSans-Regular";
+    font-size: 14px;
+    margin-top: 6px;
+    color: #9b8ec1;
+}
+
+.main-footer .logo {
+    margin-top: 81px;
+    margin-bottom: 0;
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+
+    .main-header {
+        padding-top: 38px;
+        padding-bottom: 91px;
+        background-image: url(img/football_1280.jpg);
+    }
+
+    .header-content {
+        margin-left: 2%;
+        margin-right: 2%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .logo {
+        margin-bottom: 182px;
+    }
+
+    .logo-svg {
+        width: 205px;
+    }
+
+    .page-title {
+        width: 85.5%;
+        margin-bottom: 313px;
+    }
+
+    .slogan-text {
+        font-size: 8.33vw;
+        line-height: normal;
+    }
+
+    .slogan-part-two {
+        margin-top: 0;
+        margin-left: 105px;
+    }
+
+    .buttons {
+        display: flex;
+        box-sizing: border-box;
+        padding-left: 3.5%;
+        padding-right: 3.5%;
+        justify-content: space-between;
+    }
+
+    .button {
+        font-size: 14px;
+        width: 47.5%;
+        height: 77px;
+        padding-left: 0;
+        border-radius: 38px;
+        justify-content: center;
+    }
+
+    .button:nth-child(n+2) {
+        margin-top: 0;
+    }
+
+    .device-svg {
+        width: 37px;
+        margin-right: 8%;
+    }
+
+    .athlets::before {
+        background-image: url(img/footballer_497.png);
+        z-index: 2;
+        width: 497px;
+        height: 699px;
+        top: 53px;
+        left: -150px;
+
+    }
+
+    .players::before {
+        background-image: url(img/basketballer_436.png);
+        z-index: 2;
+        width: 436px;
+        height: 625px;
+        top: -15px;
+        right: 0;
+    }
+
+    .athlets .section-title {
+        font-size: 80px;
+        padding: 85px 5% 19px 38%;
+        margin: 0;
+    }
+
+    .athlets .list-item {
+        padding: 40px 5% 40px 38%;
+    }
+
+    .athlets-players .list-title {
+        font-size: 32px;
+        margin-left: 32px;
+    }
+
+    .athlets-players .list-description {
+        font-size: 16px;
+    }
+
+    .athlets-players .list-item:nth-child(n+1):nth-child(-n+3) .list-title::before {
+        font-size: 18px;
+        left: -30px;
+    }
+
+    .athlets-players .list-item:nth-child(n+1):nth-child(-n+3) .list-title::after {
+        top: 30px;
+        left: -30px;
+        width: 22px;
+    }
+
+    .players .section-title {
+        font-size: 80px;
+        padding: 85px 38% 19px 5%;
+        margin: 0;
+    }
+
+    .players .list-item {
+        padding: 43px 38% 40px 4%;
+    }
+
+    .needs-to-do .to-do-item .to-do-content .to-do-title::before {
+        width: 117px;
+        height: 117px;
+        font-size: 24px;
+        line-height: 117px;
+        top: -185px;
+    }
+
+    .to-do-item .to-do-content .to-do-title::after {
+        top: -110px;
+        left: 45px;
+        width: 28px;
+    }
+
+    .to-do-item:nth-child(1) .to-do-content .to-do-title::after {
+        width: 25px;
+    }
+
+    .to-do-content {
+        padding: 90px 4% 100px 4%;
+    }
+
+    .to-do-title {
+        font-size: 80px;
+    }
+
+    .to-do-description {
+        font-size: 24px;
+    }
+
+    .main-footer {
+        padding-top: 125px;
+        padding-bottom: 23px;
+    }
+
+    .footer-content {
+        padding-right: 4%;
+        padding-left: 4%;
+    }
+
+    .footer-logo {
+        width: 133px;
+        height: 138px;
+    }
+
+    .footer-logo-svg {
+        width: 104px;
+    }
+
+    .footer-slogan {
+        margin-top: 82px;
+        margin-bottom: 285px;
+    }
+
+    .footer-slogan-item {
+        font-size: 10.42vw;
+    }
+
+    .footer-slogan-item:nth-child(2) {
+        font-size: 4.69vw;
+        margin-top: 27px;
+    }
+
+    .main-footer .logo {
+        margin-top: 55px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+    .athlets::before {
+        background-size: 65vw;
+        left: -170px;
+    }
+
+    .players::before {
+        background-size: 57vw;
+        right: -35px;
+    }
+}
+
+@media (min-width: 961px) {
+
+    .main-header {
+        padding-top: 44px;
+        padding-bottom: 110px;
+        background-image: url(img/football_1920.jpg);
+    }
+
+    .header-content {
+        width: 80%;
+        max-width: 1500px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0.6%;
+        padding-right: 0.6%;
+    }
+
+    .logo {
+        margin-bottom: 293px;
+    }
+
+    .logo-svg {
+        width: 191px;
+    }
+
+    .page-title {
+        width: 100%;
+        margin-bottom: 222px;
+    }
+
+    .slogan-text {
+        font-size: 4.68vw;
+        line-height: normal;
+    }
+
+    .slogan-part-two {
+        margin-top: 0;
+        margin-left: 29%;
+    }
+
+    .buttons {
+        display: flex;
+        box-sizing: border-box;
+        padding-left: 3.5%;
+        padding-right: 3.5%;
+        justify-content: center;
+    }
+
+    .button {
+        font-size: 14px;
+        width: 312px;
+        padding-left: 0;
+        height: 77px;
+        border-radius: 38px;
+        justify-content: center;
+        margin-right: 25px;
+    }
+
+    .button:nth-child(2) {
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 25px;
+    }
+
+    .device-svg {
+        width: 36px;
+        margin-right: 26px;
+    }
+
+    .athlets::before {
+        background-image: url(img/footballer_566.png);
+        z-index: 2;
+        background-position: 20% 30px;
+        background-size: 30vw;
+    }
+
+    .players::before {
+        background-image: url(img/basketballer_991.png);
+        z-index: 2;
+        background-position: right 50px;
+        background-size: 52vw;
+    }
+
+    .athlets .section-title {
+        margin: 0;
+        padding: 115px 10% 33px 52.5%;
+        font-size: 80px;
+    }
+
+    .athlets .list-item {
+        padding: 56px 10% 56px 52.5%;
+    }
+
+    .athlets-players .list-title {
+        font-size: 36px;
+        margin-left: 36px;
+        margin-bottom: 33px;
+    }
+
+    .athlets-players .list-description {
+        font-size: 20px;
+    }
+
+    .athlets-players .list-item:nth-child(n+1):nth-child(-n+3) .list-title::before {
+        font-size: 18px;
+        top: 7px;
+        left: -35px;
+    }
+
+    .athlets-players .list-item:nth-child(n+1):nth-child(-n+3) .list-title::after {
+        top: 32px;
+        left: -35px;
+        width: 22px;
+    }
+
+    .players .section-title {
+        font-size: 80px;
+        margin: 0;
+        padding: 115px 52.5% 33px 10%;
+    }
+
+    .players .list-item {
+        padding: 56px 52.5% 56px 10%;
+    }
+
+    .to-do-item {
+        display: flex;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .to-do-item:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+
+    .to-do-pic {
+        width: 50%;
+    }
+
+    .to-do-img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .to-do-content {
+        width: 50%;
+        box-sizing: border-box;
+        padding: 260px 6.5% 77px 128px;
+    }
+
+    .needs-to-do .to-do-item:nth-child(2) .to-do-content {
+        padding: 260px 128px 77px 6.5%;
+    }
+
+    .to-do-title {
+        font-size: 80px;
+        margin-bottom: 115px;
+        position: static;
+    }
+
+    .to-do-description {
+        font-size: 24px;
+    }
+
+    .needs-to-do .to-do-item .to-do-content .to-do-title::before {
+        width: 168px;
+        height: 155px;
+        font-size: 24px;
+        line-height: 155px;
+        top: 231px;
+        left: calc(50% - 84px);
+    }
+
+    .to-do-item .to-do-content .to-do-title::after {
+        top: 326px;
+        left: calc(50% - 15px);
+        width: 30px;
+    }
+
+    .main-footer {
+        background-image: url(img/game_1920.jpg);
+        padding-top: 220px;
+        padding-bottom: 43px;
+    }
+
+    .footer-content {
+        width: 79.74%;
+        max-width: 1531px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0.6%;
+        padding-right: 0.6%;
+    }
+
+    .footer-logo-slogan {
+        display: flex;
+        margin-bottom: 150px;
+    }
+
+    .footer-logo {
+        width: 6.87vw;
+        height: 7.18vw;
+        margin: 0 17.5px 0 auto;
+    }
+
+    .footer-logo-svg {
+        width: 5.46vw;
+    }
+
+    .footer-slogan {
+        margin: 0 auto 0 17.5px;
+    }
+
+    .footer-slogan-item {
+        font-size: 4.166vw;
+    }
+
+    .footer-slogan-item:nth-child(2) {
+        font-size: 1.56vw;
+        text-align: left;
+    }
+
+    .buttons {
+        margin-bottom: 260px;
+    }
+}
