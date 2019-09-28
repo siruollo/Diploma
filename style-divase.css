@@ -1,0 +1,233 @@
+@media (min-width: 961px) {
+
+    .main-header {
+        padding-top: 44px;
+        padding-bottom: 110px;
+        background-image: url(img/football_1920.jpg);
+    }
+
+    .header-content {
+        width: 80%;
+        max-width: 1500px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0.6%;
+        padding-right: 0.6%;
+    }
+
+    .logo {
+        margin-bottom: 293px;
+    }
+
+    .logo-svg {
+        width: 191px;
+    }
+
+    .visually-hidden {
+        width: 1px;
+        height: 1px;
+        clip: rect(1px, 1px, 1px, 1px);
+        position: absolute;
+    }
+
+    .page-title {
+        width: 100%;
+        margin-bottom: 222px;
+    }
+
+    .slogan-text {
+        font-size: 4.68vw;
+        line-height: normal;
+    }
+
+    .slogan-part-two {
+        margin-top: 0;
+        margin-left: 29%;
+    }
+
+    .buttons {
+        display: flex;
+        box-sizing: border-box;
+        padding-left: 3.5%;
+        padding-right: 3.5%;
+        justify-content: center;
+    }
+
+    .button {
+        font-size: 14px;
+        width: 312px;
+        padding-left: 0;
+        height: 77px;
+        border-radius: 38px;
+        justify-content: center;
+        margin-right: 25px;
+    }
+
+    .button:nth-child(2) {
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 25px;
+    }
+
+    .device-svg {
+        width: 36px;
+        margin-right: 26px;
+    }
+
+    .athlets::before {
+        background-image: url(img/footballer_566.png);
+        z-index: 2;
+        background-position: 20% 30px;
+        background-size: 30vw;
+    }
+
+    .players::before {
+        background-image: url(img/basketballer_991.png);
+        z-index: 2;
+        background-position: right 50px;
+        background-size: 52vw;
+    }
+
+    .athlets .section-title {
+        margin: 0;
+        padding: 115px 10% 33px 52.5%;
+        font-size: 80px;
+    }
+
+    .athlets .list-item {
+        padding: 56px 10% 56px 52.5%;
+    }
+
+    .athlets-players .list-title {
+        font-size: 36px;
+        margin-left: 36px;
+        margin-bottom: 33px;
+    }
+
+    .athlets-players .list-description {
+        font-size: 20px;
+    }
+
+    .athlets-players .list-item:nth-child(n+1):nth-child(-n+3) .list-title::before {
+        font-size: 18px;
+        top: 7px;
+        left: -35px;
+    }
+
+    .athlets-players .list-item:nth-child(n+1):nth-child(-n+3) .list-title::after {
+        top: 32px;
+        left: -35px;
+        width: 22px;
+    }
+
+    .players .section-title {
+        font-size: 80px;
+        margin: 0;
+        padding: 115px 52.5% 33px 10%;
+    }
+
+    .players .list-item {
+        padding: 56px 52.5% 56px 10%;
+    }
+
+    .to-do-item {
+        display: flex;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .to-do-item:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+
+    .to-do-pic {
+        width: 50%;
+    }
+
+    .to-do-img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .to-do-content {
+        width: 50%;
+        box-sizing: border-box;
+        padding: 260px 6.5% 77px 128px;
+    }
+
+    .needs-to-do .to-do-item:nth-child(2) .to-do-content {
+        padding: 260px 128px 77px 6.5%;
+    }
+
+    .to-do-title {
+        font-size: 80px;
+        margin-bottom: 115px;
+        position: static;
+    }
+
+    .to-do-description {
+        font-size: 24px;
+    }
+
+    .needs-to-do .to-do-item .to-do-content .to-do-title::before {
+        width: 168px;
+        height: 155px;
+        font-size: 24px;
+        line-height: 155px;
+        top: 231px;
+        left: calc(50% - 84px);
+    }
+
+    .to-do-item .to-do-content .to-do-title::after {
+        top: 326px;
+        left: calc(50% - 15px);
+        width: 30px;
+    }
+
+    .main-footer {
+        background-image: url(img/game_1920.jpg);
+        padding-top: 220px;
+        padding-bottom: 43px;
+    }
+
+    .footer-content {
+        width: 79.74%;
+        max-width: 1531px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0.6%;
+        padding-right: 0.6%;
+    }
+
+    .footer-logo-slogan {
+        display: flex;
+        margin-bottom: 150px;
+    }
+
+    .footer-logo {
+        width: 6.87vw;
+        height: 7.18vw;
+        margin: 0 17.5px 0 auto;
+    }
+
+    .footer-logo-svg {
+        width: 5.46vw;
+    }
+
+    .footer-slogan {
+        margin: 0 auto 0 17.5px;
+    }
+
+    .footer-slogan-item {
+        font-size: 4.166vw;
+    }
+
+    .footer-slogan-item:nth-child(2) {
+        font-size: 1.56vw;
+        text-align: left;
+    }
+
+    .buttons {
+        margin-bottom: 260px;
+    }
+}

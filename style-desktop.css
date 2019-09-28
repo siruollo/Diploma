@@ -1,0 +1,209 @@
+@media (min-width: 641px) and (max-width: 960px) {
+
+    .main-header {
+        padding-top: 38px;
+        padding-bottom: 91px;
+        background-image: url(img/football_1280.jpg);
+    }
+
+    .header-content {
+        margin-left: 2%;
+        margin-right: 2%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .logo {
+        margin-bottom: 182px;
+    }
+
+    .logo-svg {
+        width: 205px;
+    }
+
+    .visually-hidden {
+        width: 1px;
+        height: 1px;
+        clip: rect(1px, 1px, 1px, 1px);
+        position: absolute;
+    }
+
+    .page-title {
+        width: 85.5%;
+        margin-bottom: 313px;
+    }
+
+    .slogan-text {
+        font-size: 8.33vw;
+        line-height: normal;
+    }
+
+    .slogan-part-two {
+        margin-top: 0;
+        margin-left: 105px;
+    }
+
+    .buttons {
+        display: flex;
+        box-sizing: border-box;
+        padding-left: 3.5%;
+        padding-right: 3.5%;
+        justify-content: space-between;
+    }
+
+    .button {
+        font-size: 14px;
+        width: 47.5%;
+        height: 77px;
+        padding-left: 0;
+        border-radius: 38px;
+        justify-content: center;
+    }
+
+    .button:nth-child(n+2) {
+        margin-top: 0;
+    }
+
+    .device-svg {
+        width: 37px;
+        margin-right: 8%;
+    }
+
+    .athlets::before {
+        background-image: url(img/footballer_497.png);
+        z-index: 2;
+        width: 497px;
+        height: 699px;
+        top: 53px;
+        left: -150px;
+
+    }
+
+    .players::before {
+        background-image: url(img/basketballer_436.png);
+        z-index: 2;
+        width: 436px;
+        height: 625px;
+        top: -15px;
+        right: 0;
+    }
+
+    .athlets .section-title {
+        font-size: 80px;
+        padding: 85px 5% 19px 38%;
+        margin: 0;
+    }
+
+    .athlets .list-item {
+        padding: 40px 5% 40px 38%;
+    }
+
+    .athlets-players .list-title {
+        font-size: 32px;
+        margin-left: 32px;
+    }
+
+    .athlets-players .list-description {
+        font-size: 16px;
+    }
+
+    .athlets-players .list-item:nth-child(n+1):nth-child(-n+3) .list-title::before {
+        font-size: 18px;
+        left: -30px;
+    }
+
+    .athlets-players .list-item:nth-child(n+1):nth-child(-n+3) .list-title::after {
+        top: 30px;
+        left: -30px;
+        width: 22px;
+    }
+
+    .players .section-title {
+        font-size: 80px;
+        padding: 85px 38% 19px 5%;
+        margin: 0;
+    }
+
+    .players .list-item {
+        padding: 43px 38% 40px 4%;
+    }
+
+    .needs-to-do .to-do-item .to-do-content .to-do-title::before {
+        width: 117px;
+        height: 117px;
+        font-size: 24px;
+        line-height: 117px;
+        top: -185px;
+    }
+
+    .to-do-item .to-do-content .to-do-title::after {
+        top: -110px;
+        left: 45px;
+        width: 28px;
+    }
+
+    .to-do-item:nth-child(1) .to-do-content .to-do-title::after {
+        width: 25px;
+    }
+
+    .to-do-content {
+        padding: 90px 4% 100px 4%;
+    }
+
+    .to-do-title {
+        font-size: 80px;
+    }
+
+    .to-do-description {
+        font-size: 24px;
+    }
+
+    .main-footer {
+        padding-top: 125px;
+        padding-bottom: 23px;
+    }
+
+    .footer-content {
+        padding-right: 4%;
+        padding-left: 4%;
+    }
+
+    .footer-logo {
+        width: 133px;
+        height: 138px;
+    }
+
+    .footer-logo-svg {
+        width: 104px;
+    }
+
+    .footer-slogan {
+        margin-top: 82px;
+        margin-bottom: 285px;
+    }
+
+    .footer-slogan-item {
+        font-size: 10.42vw;
+    }
+
+    .footer-slogan-item:nth-child(2) {
+        font-size: 4.69vw;
+        margin-top: 27px;
+    }
+
+    .main-footer .logo {
+        margin-top: 55px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+    .athlets::before {
+        background-size: 65vw;
+        left: -170px;
+    }
+
+    .players::before {
+        background-size: 57vw;
+        right: -35px;
+    }
+}
